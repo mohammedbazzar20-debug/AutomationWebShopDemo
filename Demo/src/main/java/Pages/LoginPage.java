@@ -48,6 +48,9 @@ public class LoginPage {
 	        enterpassword(password);
 	        loginpress();
 	    }
+	   By errorMessage = By.cssSelector(".validation-summary-errors");
 
-
+	   public String getErrorMessage() {
+	       return driver.findElement(errorMessage).getText();
+	   }
 }

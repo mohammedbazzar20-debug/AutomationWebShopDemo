@@ -1,5 +1,7 @@
 package Tests;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Base.BaseTest;
@@ -8,17 +10,41 @@ import Pages.LoginPage;
 public class LoginTest extends BaseTest {
 	private LoginPage loginpath;
 	
-	@Test
-	public void validLoginTest() throws InterruptedException {
 
-        LoginPage loginPage = new LoginPage(driver);
+        @Test
+        public void validLoginTest1() throws InterruptedException {
+            LoginPage loginPage = new LoginPage(driver);
+            Thread.sleep(1000);
+            loginPage.login("AutomationTesting988982@gmail.com", "A123456@a");
+            Assert.assertTrue(driver.findElement(By.cssSelector(".ico-logout")).isDisplayed());	
+        	System.out.println("Login Successful");
+        	}
         
-		loginPage.enterloginpage();
-		Thread.sleep(2000);
 
-        loginPage.login("test@test.com", "123456");
-    	Thread.sleep(2000);
+        @Test
+        public void invalidPasswordTest() throws InterruptedException {
+            LoginPage loginPage = new LoginPage(driver);
+            Thread.sleep(1000);
 
-        loginPage.loginpress();
+            loginPage.login("valid@email.com", "WrongPassword");
+            Thread.sleep(1000);
+            Assert.assertTrue(
+            	    loginPage.getErrorMessage().contains("Login was unsuccessful"));
+            System.out.println("Login notSuccessful");
+        	}
+        
+
+        @Test
+        public void emptyCredentialsTest() throws InterruptedException {
+            LoginPage loginPage = new LoginPage(driver);
+            Thread.sleep(1000);
+            loginPage.login("", "");
+            Thread.sleep(1000);
 	
-}}
+
+	
+            Assert.assertTrue(
+            	    loginPage.getErrorMessage().contains("Login was unsuccessful"));
+            	    System.out.println("Login notSuccessful");
+        }
+}
