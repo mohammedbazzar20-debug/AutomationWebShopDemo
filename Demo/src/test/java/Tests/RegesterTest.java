@@ -20,7 +20,7 @@ public class RegesterTest extends BaseTest{
          Assert.assertEquals(regesterpage.getSuccessMessage(),"Your registration completed");
          System.out.println("Regester Successful");
          regesterpage.pressContuine();
-    	 regesterpage.Presslogout();
+    	// regesterpage.Presslogout();
 
 	 }
 
