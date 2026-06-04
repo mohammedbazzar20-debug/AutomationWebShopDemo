@@ -6,6 +6,8 @@
       <class name="Tests.LoginTest">
         <methods>
           <include name="validLoginTest1"/>
+          <include name="invalidPasswordTest"/>
+          <include name="emptyCredentialsTest"/>
           <include name="tearDown"/>
           <include name="navigateToPage"/>
           <include name="setup"/>

@@ -16,13 +16,13 @@ public class LoginPage {
 	private final By passwordBy = By.id("Password");
 	private final By clicklogin = By.cssSelector(".button-1.login-button");
 	private final By errorAlertBy = By.cssSelector(".validation-summary-errors");
-	
+	private final By logoutBtn = By.cssSelector(".ico-logout");
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 	public void navigate() {
-		driver.get("base.url" + loginPath);
+		driver.get("baseUrl" + loginPath);
 		
 	}
 	
@@ -42,6 +42,10 @@ public class LoginPage {
         driver.findElement(clicklogin).click();
 	}
 	
+	public void logout() {
+		driver.findElement(logoutBtn).click();
+	}
+	
 	   public void login(String email, String password) {
 		   enterloginpage();
 	        enterEmail(email);
@@ -53,4 +57,7 @@ public class LoginPage {
 	   public String getErrorMessage() {
 	       return driver.findElement(errorMessage).getText();
 	   }
+	   public boolean isLogoutDisplayed() {
+		    return driver.findElement(logoutBtn).isDisplayed();
+		}
 }
