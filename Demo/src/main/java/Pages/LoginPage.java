@@ -15,7 +15,7 @@ public class LoginPage {
 	private final By loginBy = By.id("Email");
 	private final By passwordBy = By.id("Password");
 	private final By clicklogin = By.cssSelector(".button-1.login-button");
-	private final By errorAlertBy = By.cssSelector(".validation-summary-errors");
+	private final By errorMessage = By.cssSelector(".validation-summary-errors");
 	private final By logoutBtn = By.cssSelector(".ico-logout");
 	
 	public LoginPage(WebDriver driver) {
@@ -52,7 +52,6 @@ public class LoginPage {
 	        enterpassword(password);
 	        loginpress();
 	    }
-	   By errorMessage = By.cssSelector(".validation-summary-errors");
 
 	   public String getErrorMessage() {
 	       return driver.findElement(errorMessage).getText();

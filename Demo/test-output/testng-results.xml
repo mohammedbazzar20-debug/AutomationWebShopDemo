@@ -1,45 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-04T03:01:07 IDT" name="Default suite" finished-at="2026-06-04T03:01:22 IDT" duration-ms="15471">
+  <suite started-at="2026-06-04T04:31:08 IDT" name="Default suite" finished-at="2026-06-04T04:31:26 IDT" duration-ms="18141">
     <groups>
     </groups>
-    <test started-at="2026-06-04T03:01:07 IDT" name="Default test" finished-at="2026-06-04T03:01:22 IDT" duration-ms="15471">
-      <class name="Tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.LoginTest@2cd76f31]" started-at="2026-06-04T03:01:07 IDT" name="setup" finished-at="2026-06-04T03:01:10 IDT" duration-ms="3274" status="PASS">
+    <test started-at="2026-06-04T04:31:08 IDT" name="Default test" finished-at="2026-06-04T04:31:26 IDT" duration-ms="18141">
+      <class name="Tests.RegesterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:08 IDT" name="setup" finished-at="2026-06-04T04:31:12 IDT" duration-ms="3751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="navigateToPage()[pri:0, instance:Tests.LoginTest@2cd76f31]" started-at="2026-06-04T03:01:10 IDT" name="navigateToPage" finished-at="2026-06-04T03:01:12 IDT" duration-ms="1704" status="PASS">
+        <test-method is-config="true" signature="navigateToPage()[pri:0, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:12 IDT" name="navigateToPage" finished-at="2026-06-04T04:31:12 IDT" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToPage -->
-        <test-method signature="validLoginTest1()[pri:1, instance:Tests.LoginTest@2cd76f31]" started-at="2026-06-04T03:01:12 IDT" name="validLoginTest1" finished-at="2026-06-04T03:01:15 IDT" duration-ms="3428" status="PASS">
+        <test-method signature="validRegesterTest1()[pri:1, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:12 IDT" name="validRegesterTest1" finished-at="2026-06-04T04:31:16 IDT" duration-ms="3749" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest1 -->
-        <test-method is-config="true" signature="navigateToPage()[pri:0, instance:Tests.LoginTest@2cd76f31]" started-at="2026-06-04T03:01:15 IDT" name="navigateToPage" finished-at="2026-06-04T03:01:16 IDT" duration-ms="360" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToPage -->
-        <test-method signature="invalidPasswordTest()[pri:2, instance:Tests.LoginTest@2cd76f31]" started-at="2026-06-04T03:01:16 IDT" name="invalidPasswordTest" finished-at="2026-06-04T03:01:19 IDT" duration-ms="3226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidPasswordTest -->
-        <test-method is-config="true" signature="navigateToPage()[pri:0, instance:Tests.LoginTest@2cd76f31]" started-at="2026-06-04T03:01:19 IDT" name="navigateToPage" finished-at="2026-06-04T03:01:19 IDT" duration-ms="491" status="PASS">
+        </test-method> <!-- validRegesterTest1 -->
+        <test-method is-config="true" signature="navigateToPage()[pri:0, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:16 IDT" name="navigateToPage" finished-at="2026-06-04T04:31:16 IDT" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToPage -->
-        <test-method signature="emptyCredentialsTest()[pri:3, instance:Tests.LoginTest@2cd76f31]" started-at="2026-06-04T03:01:19 IDT" name="emptyCredentialsTest" finished-at="2026-06-04T03:01:22 IDT" duration-ms="2905" status="PASS">
+        <test-method signature="Regesterwithoutemail()[pri:2, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:16 IDT" name="Regesterwithoutemail" finished-at="2026-06-04T04:31:18 IDT" duration-ms="1809" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- emptyCredentialsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@2cd76f31]" started-at="2026-06-04T03:01:22 IDT" name="tearDown" finished-at="2026-06-04T03:01:22 IDT" duration-ms="0" status="PASS">
+        </test-method> <!-- Regesterwithoutemail -->
+        <test-method is-config="true" signature="navigateToPage()[pri:0, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:18 IDT" name="navigateToPage" finished-at="2026-06-04T04:31:19 IDT" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToPage -->
+        <test-method signature="Regesterwithoutpassword()[pri:3, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:19 IDT" name="Regesterwithoutpassword" finished-at="2026-06-04T04:31:20 IDT" duration-ms="1809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Regesterwithoutpassword -->
+        <test-method is-config="true" signature="navigateToPage()[pri:0, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:20 IDT" name="navigateToPage" finished-at="2026-06-04T04:31:21 IDT" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToPage -->
+        <test-method signature="Regesterwithoutconfirmpass()[pri:4, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:21 IDT" name="Regesterwithoutconfirmpass" finished-at="2026-06-04T04:31:23 IDT" duration-ms="2037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Regesterwithoutconfirmpass -->
+        <test-method is-config="true" signature="navigateToPage()[pri:0, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:23 IDT" name="navigateToPage" finished-at="2026-06-04T04:31:23 IDT" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToPage -->
+        <test-method signature="registerWithLongFirstName()[pri:5, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:23 IDT" name="registerWithLongFirstName" finished-at="2026-06-04T04:31:26 IDT" duration-ms="2943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithLongFirstName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.RegesterTest@49438269]" started-at="2026-06-04T04:31:26 IDT" name="tearDown" finished-at="2026-06-04T04:31:26 IDT" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.LoginTest -->
+      </class> <!-- Tests.RegesterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
