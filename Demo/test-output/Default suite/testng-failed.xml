@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.WishListTest">
+      <class name="AuthTests.RegesterTest">
         <methods>
-          <include name="verifyWishlistButtonPresence"/>
+          <include name="registerWithLongFirstName"/>
           <include name="tearDown"/>
-          <include name="navigateToPage"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Tests.WishListTest -->
+      </class> <!-- AuthTests.RegesterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
