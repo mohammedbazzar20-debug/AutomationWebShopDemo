@@ -1,10 +1,10 @@
-package Tests;
+package AuthTests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import AuthPage.RegesterPage;
 import Base.BaseTest;
-import Pages.RegesterPage;
 import Utility.DataGenerator;
 
 public class RegesterTest extends BaseTest{
@@ -20,7 +20,7 @@ public class RegesterTest extends BaseTest{
          Assert.assertEquals(regesterpage.getSuccessMessage(),"Your registration completed");
          System.out.println("Regester Successful");
          regesterpage.pressContuine();
-    	// regesterpage.Presslogout();
+    	 regesterpage.Presslogout();
 
 	 }
 
@@ -60,17 +60,27 @@ public void Regesterwithoutconfirmpass() throws InterruptedException {
 }
 @Test(priority = 5)
 public void registerWithLongFirstName() throws InterruptedException {
-	String email = DataGenerator.generateEmail();
-	 RegesterPage regesterpage = new RegesterPage(driver);
-    Thread.sleep(1000);
-    regesterpage.regester("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    		+ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    		,"Mahmoud",email,"A123456@a","A123456@a");
-    Assert.assertEquals(regesterpage.getSuccessMessage(),"Your registration completed");
-    System.out.println("Regester Successful");
+
+    String email = DataGenerator.generateEmail();
+
+    RegesterPage regesterpage = new RegesterPage(driver);
+
+    String longName = "A".repeat(450);
+
+    regesterpage.regester(
+        longName,
+        "Mahmoud",
+        email,
+        "A123456@a",
+        "A123456@a"
+    );
+
+    Assert.assertTrue(regesterpage.isRegistrationFailed());
+    System.out.println("Test Passed - System rejected long name");
+}
 
 }
 
-    }
+    
 
 

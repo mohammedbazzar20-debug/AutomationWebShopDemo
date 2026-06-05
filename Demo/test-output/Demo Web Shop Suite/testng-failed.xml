@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo Web Shop Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="All Workflows(failed)">
+    <classes>
+      <class name="Tests.WishListTest">
+        <methods>
+          <include name="addinggiftwithoutemailtowishlist"/>
+          <include name="ValidAddingtoWishList"/>
+          <include name="verifyWishlistButtonPresence"/>
+          <include name="navigateToPage"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.WishListTest -->
+      <class name="Tests.SearchTest">
+        <methods>
+          <include name="ValidSearchproduct"/>
+          <include name="SearchingunfoundProduct"/>
+          <include name="navigateToPage"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.SearchTest -->
+    </classes>
+  </test> <!-- All Workflows(failed) -->
+</suite> <!-- Failed suite [Demo Web Shop Suite] -->

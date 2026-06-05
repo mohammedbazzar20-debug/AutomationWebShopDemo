@@ -6,8 +6,8 @@
       <class name="Tests.WishListTest">
         <methods>
           <include name="verifyWishlistButtonPresence"/>
-          <include name="navigateToPage"/>
           <include name="tearDown"/>
+          <include name="navigateToPage"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Tests.WishListTest -->

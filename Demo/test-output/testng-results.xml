@@ -1,21 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="16" passed="14" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-05T02:25:52 IDT" name="Default suite" finished-at="2026-06-05T02:25:57 IDT" duration-ms="4847">
+  <suite started-at="2026-06-05T03:10:16 IDT" name="AutomationWebShopSuite" finished-at="2026-06-05T03:11:48 IDT" duration-ms="91472">
     <groups>
     </groups>
-    <test started-at="2026-06-05T02:25:52 IDT" name="Default test" finished-at="2026-06-05T02:25:57 IDT" duration-ms="4847">
-      <class name="Tests.WishListTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.WishListTest@1c1bbc4e]" started-at="2026-06-05T02:25:52 IDT" name="setup" finished-at="2026-06-05T02:25:55 IDT" duration-ms="2356" status="PASS">
+    <test started-at="2026-06-05T03:10:16 IDT" name="Authentication Tests" finished-at="2026-06-05T03:11:02 IDT" duration-ms="45366">
+      <class name="AuthTests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:AuthTests.LoginTest@1165b38]" started-at="2026-06-05T03:10:16 IDT" name="setup" finished-at="2026-06-05T03:10:20 IDT" duration-ms="3548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="navigateToPage()[pri:0, instance:Tests.WishListTest@1c1bbc4e]" started-at="2026-06-05T02:25:55 IDT" name="navigateToPage" finished-at="2026-06-05T02:25:56 IDT" duration-ms="1176" status="PASS">
+        <test-method signature="validLoginTest1()[pri:1, instance:AuthTests.LoginTest@1165b38]" started-at="2026-06-05T03:10:20 IDT" name="validLoginTest1" finished-at="2026-06-05T03:10:25 IDT" duration-ms="4656" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToPage -->
-        <test-method signature="verifyWishlistButtonPresence()[pri:0, instance:Tests.WishListTest@1c1bbc4e]" started-at="2026-06-05T02:25:56 IDT" name="verifyWishlistButtonPresence" finished-at="2026-06-05T02:25:57 IDT" duration-ms="1255" status="FAIL">
+        </test-method> <!-- validLoginTest1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AuthTests.LoginTest@1165b38]" started-at="2026-06-05T03:10:25 IDT" name="tearDown" finished-at="2026-06-05T03:10:25 IDT" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AuthTests.LoginTest@1165b38]" started-at="2026-06-05T03:10:25 IDT" name="setup" finished-at="2026-06-05T03:10:28 IDT" duration-ms="2645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidPasswordTest()[pri:2, instance:AuthTests.LoginTest@1165b38]" started-at="2026-06-05T03:10:28 IDT" name="invalidPasswordTest" finished-at="2026-06-05T03:10:30 IDT" duration-ms="2904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AuthTests.LoginTest@1165b38]" started-at="2026-06-05T03:10:30 IDT" name="tearDown" finished-at="2026-06-05T03:10:31 IDT" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AuthTests.LoginTest@1165b38]" started-at="2026-06-05T03:10:31 IDT" name="setup" finished-at="2026-06-05T03:10:33 IDT" duration-ms="2808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="emptyCredentialsTest()[pri:3, instance:AuthTests.LoginTest@1165b38]" started-at="2026-06-05T03:10:33 IDT" name="emptyCredentialsTest" finished-at="2026-06-05T03:10:36 IDT" duration-ms="2966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyCredentialsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AuthTests.LoginTest@1165b38]" started-at="2026-06-05T03:10:36 IDT" name="tearDown" finished-at="2026-06-05T03:10:37 IDT" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AuthTests.LoginTest -->
+      <class name="AuthTests.RegesterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:37 IDT" name="setup" finished-at="2026-06-05T03:10:39 IDT" duration-ms="2757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validRegesterTest1()[pri:1, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:39 IDT" name="validRegesterTest1" finished-at="2026-06-05T03:10:43 IDT" duration-ms="3615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validRegesterTest1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:43 IDT" name="tearDown" finished-at="2026-06-05T03:10:43 IDT" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:43 IDT" name="setup" finished-at="2026-06-05T03:10:46 IDT" duration-ms="2512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Regesterwithoutemail()[pri:2, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:46 IDT" name="Regesterwithoutemail" finished-at="2026-06-05T03:10:47 IDT" duration-ms="1855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Regesterwithoutemail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:47 IDT" name="tearDown" finished-at="2026-06-05T03:10:48 IDT" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:48 IDT" name="setup" finished-at="2026-06-05T03:10:50 IDT" duration-ms="2622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Regesterwithoutpassword()[pri:3, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:50 IDT" name="Regesterwithoutpassword" finished-at="2026-06-05T03:10:52 IDT" duration-ms="1862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Regesterwithoutpassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:52 IDT" name="tearDown" finished-at="2026-06-05T03:10:52 IDT" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:52 IDT" name="setup" finished-at="2026-06-05T03:10:55 IDT" duration-ms="2808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Regesterwithoutconfirmpass()[pri:4, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:55 IDT" name="Regesterwithoutconfirmpass" finished-at="2026-06-05T03:10:57 IDT" duration-ms="1888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Regesterwithoutconfirmpass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:57 IDT" name="tearDown" finished-at="2026-06-05T03:10:57 IDT" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:10:57 IDT" name="setup" finished-at="2026-06-05T03:11:00 IDT" duration-ms="2679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerWithLongFirstName()[pri:5, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:11:00 IDT" name="registerWithLongFirstName" finished-at="2026-06-05T03:11:02 IDT" duration-ms="1869" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at AuthTests.RegesterTest.registerWithLongFirstName(RegesterTest.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithLongFirstName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AuthTests.RegesterTest@2aceadd4]" started-at="2026-06-05T03:11:02 IDT" name="tearDown" finished-at="2026-06-05T03:11:02 IDT" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AuthTests.RegesterTest -->
+    </test> <!-- Authentication Tests -->
+    <test started-at="2026-06-05T03:11:02 IDT" name="Shopping Workflow Tests" finished-at="2026-06-05T03:11:48 IDT" duration-ms="46049">
+      <class name="Tests.CartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.CartTest@7494f96a]" started-at="2026-06-05T03:11:15 IDT" name="setup" finished-at="2026-06-05T03:11:17 IDT" duration-ms="2640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addProductToCartFrompageproduct()[pri:1, instance:Tests.CartTest@7494f96a]" started-at="2026-06-05T03:11:17 IDT" name="addProductToCartFrompageproduct" finished-at="2026-06-05T03:11:20 IDT" duration-ms="2388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCartFrompageproduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartTest@7494f96a]" started-at="2026-06-05T03:11:20 IDT" name="tearDown" finished-at="2026-06-05T03:11:20 IDT" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.CartTest@7494f96a]" started-at="2026-06-05T03:11:20 IDT" name="setup" finished-at="2026-06-05T03:11:23 IDT" duration-ms="3054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addProductToCartnextSearch()[pri:2, instance:Tests.CartTest@7494f96a]" started-at="2026-06-05T03:11:23 IDT" name="addProductToCartnextSearch" finished-at="2026-06-05T03:11:25 IDT" duration-ms="1877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCartnextSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartTest@7494f96a]" started-at="2026-06-05T03:11:25 IDT" name="tearDown" finished-at="2026-06-05T03:11:25 IDT" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.CartTest@7494f96a]" started-at="2026-06-05T03:11:25 IDT" name="setup" finished-at="2026-06-05T03:11:28 IDT" duration-ms="2797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addProductToCartFromHomePage()[pri:3, instance:Tests.CartTest@7494f96a]" started-at="2026-06-05T03:11:28 IDT" name="addProductToCartFromHomePage" finished-at="2026-06-05T03:11:29 IDT" duration-ms="1195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCartFromHomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartTest@7494f96a]" started-at="2026-06-05T03:11:29 IDT" name="tearDown" finished-at="2026-06-05T03:11:29 IDT" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.CartTest -->
+      <class name="Tests.SearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.SearchTest@26b3fd41]" started-at="2026-06-05T03:11:02 IDT" name="setup" finished-at="2026-06-05T03:11:05 IDT" duration-ms="2678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidSearchproduct()[pri:1, instance:Tests.SearchTest@26b3fd41]" started-at="2026-06-05T03:11:05 IDT" name="ValidSearchproduct" finished-at="2026-06-05T03:11:08 IDT" duration-ms="3355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidSearchproduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.SearchTest@26b3fd41]" started-at="2026-06-05T03:11:08 IDT" name="tearDown" finished-at="2026-06-05T03:11:08 IDT" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.SearchTest@26b3fd41]" started-at="2026-06-05T03:11:08 IDT" name="setup" finished-at="2026-06-05T03:11:11 IDT" duration-ms="2767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SearchingunfoundProduct()[pri:2, instance:Tests.SearchTest@26b3fd41]" started-at="2026-06-05T03:11:11 IDT" name="SearchingunfoundProduct" finished-at="2026-06-05T03:11:15 IDT" duration-ms="3724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchingunfoundProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.SearchTest@26b3fd41]" started-at="2026-06-05T03:11:15 IDT" name="tearDown" finished-at="2026-06-05T03:11:15 IDT" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.SearchTest -->
+      <class name="Tests.WishListTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.WishListTest@561b6512]" started-at="2026-06-05T03:11:29 IDT" name="setup" finished-at="2026-06-05T03:11:32 IDT" duration-ms="2767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidAddingtoWishList()[pri:1, instance:Tests.WishListTest@561b6512]" started-at="2026-06-05T03:11:32 IDT" name="ValidAddingtoWishList" finished-at="2026-06-05T03:11:37 IDT" duration-ms="5059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidAddingtoWishList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.WishListTest@561b6512]" started-at="2026-06-05T03:11:37 IDT" name="tearDown" finished-at="2026-06-05T03:11:37 IDT" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.WishListTest@561b6512]" started-at="2026-06-05T03:11:37 IDT" name="setup" finished-at="2026-06-05T03:11:40 IDT" duration-ms="2727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addinggiftwithoutemailtowishlist()[pri:2, instance:Tests.WishListTest@561b6512]" started-at="2026-06-05T03:11:40 IDT" name="addinggiftwithoutemailtowishlist" finished-at="2026-06-05T03:11:44 IDT" duration-ms="3971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addinggiftwithoutemailtowishlist -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.WishListTest@561b6512]" started-at="2026-06-05T03:11:44 IDT" name="tearDown" finished-at="2026-06-05T03:11:44 IDT" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.WishListTest@561b6512]" started-at="2026-06-05T03:11:44 IDT" name="setup" finished-at="2026-06-05T03:11:47 IDT" duration-ms="2618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyWishlistButtonPresence()[pri:3, instance:Tests.WishListTest@561b6512]" started-at="2026-06-05T03:11:47 IDT" name="verifyWishlistButtonPresence" finished-at="2026-06-05T03:11:48 IDT" duration-ms="1164" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -59,11 +285,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWishlistButtonPresence -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.WishListTest@1c1bbc4e]" started-at="2026-06-05T02:25:57 IDT" name="tearDown" finished-at="2026-06-05T02:25:57 IDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.WishListTest@561b6512]" started-at="2026-06-05T03:11:48 IDT" name="tearDown" finished-at="2026-06-05T03:11:48 IDT" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.WishListTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Shopping Workflow Tests -->
+  </suite> <!-- AutomationWebShopSuite -->
 </testng-results>

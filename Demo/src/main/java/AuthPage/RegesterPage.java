@@ -1,4 +1,4 @@
-package Pages;
+package AuthPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -102,5 +102,27 @@ public class RegesterPage {
 
 		public String getConfirmPasswordError() {
 		    return driver.findElement(confirmPasswordError).getText();
+		}
+		
+		public boolean isRegistrationSuccessful() {
+		    return driver.getPageSource().contains("Your registration completed");
+		}
+		
+		public boolean isEmailErrorDisplayed() {
+		    return driver.findElements(emailError).size() > 0;
+		}
+		
+		public String getEmailErrorText() {
+		    return isEmailErrorDisplayed()
+		        ? driver.findElement(emailError).getText()
+		        : "";
+		}
+		
+		public boolean isErrorPresent() {
+		    return driver.findElements(By.cssSelector(".field-validation-error")).size() > 0;
+		}
+		
+		public boolean isRegistrationFailed() {
+		    return isErrorPresent();
 		}
 }
