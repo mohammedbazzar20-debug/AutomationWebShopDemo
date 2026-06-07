@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\moham\AppData\Local\Temp\testng-eclipse-54032446\testng-customsuite.xml</span>
+                    <span>C:\Users\moham\AppData\Local\Temp\testng-eclipse-500297365\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.CartTest" class="method navigator-link" hash-for-method="removeProductFromCart">removeProductFromCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.WishListTest" class="method navigator-link" hash-for-method="removeProductFromWishlist">removeProductFromWishlist</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Tests.CartTest</span>
+              <span class="class-name">Tests.WishListTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="removeProductFromCart">
-                  </a> <!-- removeProductFromCart -->
-                  <span class="method-name">removeProductFromCart</span>
+                  <a name="removeProductFromWishlist">
+                  </a> <!-- removeProductFromWishlist -->
+                  <span class="method-name">removeProductFromWishlist</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\moham\AppData\Local\Temp\testng-eclipse-54032446\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\moham\AppData\Local\Temp\testng-eclipse-500297365\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,11 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.CartTest&quot;&gt;
+      &lt;class name=&quot;Tests.WishListTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;removeProductFromCart&quot;/&gt;
+          &lt;include name=&quot;removeProductFromWishlist&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Tests.CartTest --&gt;
+      &lt;/class&gt; &lt;!-- Tests.WishListTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -191,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'removeProductFromCart')
-data.setCell(0, 2, 'Tests.CartTest')
-data.setCell(0, 3, 7241);
+data.setCell(0, 1, 'removeProductFromWishlist')
+data.setCell(0, 2, 'Tests.WishListTest')
+data.setCell(0, 3, 5337);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,19 +213,17 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Tests.CartTest</span>
+              <span class="ignored-class-name">Tests.WishListTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">addProductToCartFromHomePage</span>
+                <span class="ignored-method-name">verifyWishlistButtonPresence</span>
                 <br/>
-                <span class="ignored-method-name">addProductToCartFrompageproduct</span>
+                <span class="ignored-method-name">ValidAddingtoWishList</span>
                 <br/>
-                <span class="ignored-method-name">verifyProductPriceInCart</span>
-                <br/>
-                <span class="ignored-method-name">addProductToCartnextSearch</span>
+                <span class="ignored-method-name">addinggiftwithoutemailtowishlist</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -237,22 +235,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.WishListTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">openHomePage</span>
-                <span class="method-start">5700 ms</span>
+                <span class="method-start">5158 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">removeProductFromCart</span>
-                <span class="method-start">8181 ms</span>
+                <span class="method-name">removeProductFromWishlist</span>
+                <span class="method-start">7246 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15580 ms</span>
+                <span class="method-start">12657 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

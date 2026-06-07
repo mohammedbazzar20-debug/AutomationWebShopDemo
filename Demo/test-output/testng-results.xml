@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-08T02:10:06 IDT" name="Default suite" finished-at="2026-06-08T02:10:16 IDT" duration-ms="9835">
+  <suite started-at="2026-06-08T02:51:22 IDT" name="Default suite" finished-at="2026-06-08T02:51:29 IDT" duration-ms="7478">
     <groups>
     </groups>
-    <test started-at="2026-06-08T02:10:06 IDT" name="Default test" finished-at="2026-06-08T02:10:16 IDT" duration-ms="9835">
-      <class name="Tests.CartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.CartTest@2aceadd4]" started-at="2026-06-08T02:10:01 IDT" name="setup" finished-at="2026-06-08T02:10:06 IDT" duration-ms="5600" status="PASS">
+    <test started-at="2026-06-08T02:51:22 IDT" name="Default test" finished-at="2026-06-08T02:51:29 IDT" duration-ms="7478">
+      <class name="Tests.WishListTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.WishListTest@7a8c8dcf]" started-at="2026-06-08T02:51:17 IDT" name="setup" finished-at="2026-06-08T02:51:22 IDT" duration-ms="5122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openHomePage()[pri:0, instance:Tests.CartTest@2aceadd4]" started-at="2026-06-08T02:10:06 IDT" name="openHomePage" finished-at="2026-06-08T02:10:09 IDT" duration-ms="2479" status="PASS">
+        <test-method is-config="true" signature="openHomePage()[pri:0, instance:Tests.WishListTest@7a8c8dcf]" started-at="2026-06-08T02:51:22 IDT" name="openHomePage" finished-at="2026-06-08T02:51:24 IDT" duration-ms="2088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openHomePage -->
-        <test-method signature="removeProductFromCart()[pri:4, instance:Tests.CartTest@2aceadd4]" started-at="2026-06-08T02:10:09 IDT" name="removeProductFromCart" finished-at="2026-06-08T02:10:16 IDT" duration-ms="7241" status="PASS">
+        <test-method signature="removeProductFromWishlist()[pri:4, instance:Tests.WishListTest@7a8c8dcf]" started-at="2026-06-08T02:51:24 IDT" name="removeProductFromWishlist" finished-at="2026-06-08T02:51:29 IDT" duration-ms="5337" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- removeProductFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartTest@2aceadd4]" started-at="2026-06-08T02:10:16 IDT" name="tearDown" finished-at="2026-06-08T02:10:25 IDT" duration-ms="8998" status="PASS">
+        </test-method> <!-- removeProductFromWishlist -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.WishListTest@7a8c8dcf]" started-at="2026-06-08T02:51:29 IDT" name="tearDown" finished-at="2026-06-08T02:51:30 IDT" duration-ms="893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.CartTest -->
+      </class> <!-- Tests.WishListTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

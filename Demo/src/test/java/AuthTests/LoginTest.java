@@ -10,9 +10,9 @@ public class LoginTest extends BaseTest {
 	
 
         @Test(priority = 1)
-        public void validLoginTest1() throws InterruptedException {
+        public void validLoginTest1() {
             LoginPage loginPage = new LoginPage(driver);
-            Thread.sleep(1000);
+            waitSeconds(2);
             loginPage.login("AutomationTesting988982@gmail.com", "A123456@a");
             Assert.assertTrue(loginPage.isLogoutDisplayed());
             System.out.println("Login Successful");
@@ -21,23 +21,23 @@ public class LoginTest extends BaseTest {
         
 
         @Test(priority = 2)
-        public void invalidPasswordTest() throws InterruptedException {
+        public void invalidPasswordTest() {
             LoginPage loginPage = new LoginPage(driver);
-            Thread.sleep(1000);
-
+            waitSeconds(2);
+            
             loginPage.login("valid@email.com", "WrongPassword");
-            Thread.sleep(1000);
+            waitSeconds(2);          
             Assert.assertTrue( loginPage.getErrorMessage().contains("Login was unsuccessful"));
             System.out.println("Login notSuccessful");
         	}
         
 
         @Test(priority = 3)
-        public void emptyCredentialsTest() throws InterruptedException {
+        public void emptyCredentialsTest() {
             LoginPage loginPage = new LoginPage(driver);
-            Thread.sleep(1000);
+            waitSeconds(2);
             loginPage.login("", "");
-            Thread.sleep(1000);
+            waitSeconds(2);
 	
 
 	

@@ -70,22 +70,22 @@ public class CartTest extends BaseTest {
 	}
 	
 	@Test(priority = 4)
-	public void removeProductFromCart() throws InterruptedException {
+	public void removeProductFromCart() {
 
 	    SearchPage search = new SearchPage(driver);
 	    CartPage cart = new CartPage(driver);
 
 	    search.Search("laptop");
 	    search.productdetailpage();
-
+	    waitSeconds(2);
 	    cart.addtocartProductPage();
 
-	    Thread.sleep(1000);
+	    waitSeconds(2);
 
 	    cart.openShoppingCart();
-
+	    waitSeconds(2);
 	    cart.removeProduct();
-
+	    waitSeconds(2);
 	    cart.updateCart();
 
 	    Assert.assertTrue(
@@ -97,18 +97,18 @@ public class CartTest extends BaseTest {
 	}
 	
 	@Test(priority = 5)
-	public void verifyProductPriceInCart() throws InterruptedException {
+	public void verifyProductPriceInCart() {
 
 	    SearchPage search = new SearchPage(driver);
 	    CartPage cart = new CartPage(driver);
 
 	    search.Search("laptop");
-
+	    waitSeconds(2);
 	    search.productdetailpage();
-
+	    waitSeconds(2);
 	    cart.addtocartProductPage();
 
-	    Thread.sleep(1000);
+	    waitSeconds(2);
 
 	    cart.openShoppingCart();
 

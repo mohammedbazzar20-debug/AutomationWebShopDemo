@@ -15,6 +15,15 @@
   </test> <!-- Authentication Tests(failed) -->
   <test thread-count="5" name="Shopping Workflow Tests(failed)">
     <classes>
+      <class name="Tests.CartTest">
+        <methods>
+          <include name="openHomePage"/>
+          <include name="removeProductFromCart"/>
+          <include name="verifyProductPriceInCart"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Tests.CartTest -->
       <class name="Tests.WishListTest">
         <methods>
           <include name="ValidAddingtoWishList"/>
@@ -22,6 +31,7 @@
           <include name="verifyWishlistButtonPresence"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="removeProductFromWishlist"/>
         </methods>
       </class> <!-- Tests.WishListTest -->
     </classes>

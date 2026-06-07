@@ -6,18 +6,20 @@ import org.testng.annotations.Test;
 import AuthPage.RegesterPage;
 import Base.BaseTest;
 import Utility.DataGenerator;
+import Utility.RegisterDataProvider;
 
 public class RegesterTest extends BaseTest{
-	private RegesterPage regesterpath;
 	
 	
 	 @Test(priority = 1)
-     public void validRegesterTest1() throws InterruptedException {
+     public void validRegesterTest1() {
 		 String email = DataGenerator.generateEmail();
 		 RegesterPage regesterpage = new RegesterPage(driver);
-         Thread.sleep(1000);
-         regesterpage.regester("Ahmad","Mahmoud",email,"A123456@a","A123456@a"); //data provider
+		 waitSeconds(2);
+         regesterpage.regester("Ahmad","Mahmoud",email,"A123456@a","A123456@a");
+         waitSeconds(2);
          Assert.assertEquals(regesterpage.getSuccessMessage(),"Your registration completed");
+         waitSeconds(2);
          System.out.println("Regester Successful");
          regesterpage.pressContuine();
     	 regesterpage.Presslogout();
@@ -26,47 +28,57 @@ public class RegesterTest extends BaseTest{
 
 
 
-@Test(priority = 2)
-public void Regesterwithoutemail() throws InterruptedException {
-	 RegesterPage regesterpage = new RegesterPage(driver);
-    Thread.sleep(1000);
-    regesterpage.regester("Ahmad","Mahmoud","","A123456@a","A123456@a");
-    Assert.assertEquals( regesterpage.getEmailError(), "Email is required." );
-    System.out.println("Regester unSuccessful");
-}
+	 @Test(
+			    dataProvider = "registerNegativeData",
+			    dataProviderClass = RegisterDataProvider.class
+			)
+			public void invalidRegisterTest(
+			        String firstName,
+			        String lastName,
+			        String email,
+			        String password,
+			        String confirmPassword,
+			        String expectedError) {
 
+			    RegesterPage regesterpage = new RegesterPage(driver);
 
+			    regesterpage.regester(
+			            firstName,
+			            lastName,
+			            email,
+			            password,
+			            confirmPassword);
 
-@Test(priority = 3)
-public void Regesterwithoutpassword() throws InterruptedException {
-	String email = DataGenerator.generateEmail();
-	 RegesterPage regesterpage = new RegesterPage(driver);
-    Thread.sleep(1000);
-    regesterpage.regester("Ahmad","Mahmoud",email,"","A123456@a");
-    Assert.assertEquals( regesterpage.getPasswordError(), "Password is required." );
-    System.out.println("Regester unSuccessful");
-}
+			    if (email.isEmpty()) {
 
+			        Assert.assertEquals(
+			                regesterpage.getEmailError(),
+			                expectedError);
 
+			    } else if (password.isEmpty()) {
 
-@Test(priority = 4)
-public void Regesterwithoutconfirmpass() throws InterruptedException {
-	String email = DataGenerator.generateEmail();
-	 RegesterPage regesterpage = new RegesterPage(driver);
-    Thread.sleep(1000);
-    regesterpage.regester("Ahmad","Mahmoud",email,"A123456@a","");
-    Assert.assertEquals( regesterpage.getConfirmPasswordError(), "Password is required." );
-    System.out.println("Regester unSuccessful");
-}
+			        Assert.assertEquals(
+			                regesterpage.getPasswordError(),
+			                expectedError);
+
+			    } else {
+
+			        Assert.assertEquals(
+			                regesterpage.getConfirmPasswordError(),
+			                expectedError);
+			    }
+
+			    System.out.println("Negative Test Passed");
+			}
 @Test(priority = 5)
-public void registerWithLongFirstName() throws InterruptedException {
+public void registerWithLongFirstName() {
 
     String email = DataGenerator.generateEmail();
 
     RegesterPage regesterpage = new RegesterPage(driver);
 
     String longName = "A".repeat(450);
-
+    waitSeconds(2);
     regesterpage.regester(
         longName,
         "Mahmoud",
@@ -74,8 +86,9 @@ public void registerWithLongFirstName() throws InterruptedException {
         "A123456@a",
         "A123456@a"
     );
-
+    waitSeconds(2);
     Assert.assertTrue(regesterpage.isRegistrationFailed());
+    waitSeconds(2);
     System.out.println("Test Passed - System rejected long name");
 }
 

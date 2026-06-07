@@ -9,16 +9,16 @@ import Pages.WishListPage;
 public class WishListTest extends BaseTest {
 	
 	@Test(priority = 1)
-	public void ValidAddingtoWishList() throws InterruptedException {
+	public void ValidAddingtoWishList() {
 		
 		WishListPage wishlist = new WishListPage (driver);
 		wishlist.giftCardpage();
-		Thread.sleep(1000);
+		waitSeconds(2);
 		wishlist.InformationGiftcard("Ahmad", "user1780613996804@gmail.com", "AceHaxor", "AutomationTesting988982@gmail.com");
-		Thread.sleep(1000);
+		waitSeconds(2);
 
 		wishlist.Addingtowishlist();
-		Thread.sleep(1000);
+		waitSeconds(2);
 
 		Assert.assertEquals(wishlist.getMessageText(),"The product has been added to your wishlist");	
 		System.out.println(wishlist.getMessageText());
@@ -26,16 +26,16 @@ public class WishListTest extends BaseTest {
 	}
 	
 	@Test(priority = 2)
-	public void addinggiftwithoutemailtowishlist() throws InterruptedException {
+	public void addinggiftwithoutemailtowishlist() {
 		
 		WishListPage wishlist = new WishListPage (driver);
 		wishlist.giftCardpage();
-		Thread.sleep(1000);
+		waitSeconds(2);
 		wishlist.InformationGiftcard("Ahmad", "", "AceHaxor", "AutomationTesting988982@gmail.com");
-		Thread.sleep(1000);
+		waitSeconds(2);
 
 		wishlist.Addingtowishlist();
-		Thread.sleep(1000);
+		waitSeconds(2);
 
 		Assert.assertTrue( wishlist.getErrorMessageText() .contains("Enter valid recipient email") );
 		System.out.println(wishlist.getErrorMessageText());
@@ -46,25 +46,29 @@ public class WishListTest extends BaseTest {
 	public void verifyWishlistButtonPresence() {
 
 	    WishListPage wishlist = new WishListPage(driver);
-
+	    waitSeconds(2);
 	    wishlist.CheapComputer();
-
+	    waitSeconds(2);
+	    
 	    if (wishlist.isWishlistButtonPresent()) {
 	        System.out.println("Wishlist button exists");
 	    } else {
 	        System.out.println("Wishlist button is missing → possible bug");
 	    }
+	    waitSeconds(2);
 
 	    Assert.assertTrue(wishlist.isWishlistButtonPresent());
 	}
 	
 	@Test(priority = 4)
-	public void removeProductFromWishlist() throws InterruptedException {
+	public void removeProductFromWishlist() {
 
 	    WishListPage wishlist = new WishListPage(driver);
-
+	    waitSeconds(2);
+	    
 	    wishlist.giftCardpage();
-
+	    waitSeconds(2);
+	    
 	    wishlist.InformationGiftcard(
 	            "Ahmad",
 	            "user@gmail.com",
@@ -74,7 +78,7 @@ public class WishListTest extends BaseTest {
 
 	    wishlist.Addingtowishlist();
 
-	    Thread.sleep(1000);
+	    waitSeconds(2);
 
 	    wishlist.Oopenwishlist();
 

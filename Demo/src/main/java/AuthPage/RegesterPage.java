@@ -72,14 +72,13 @@ public class RegesterPage {
 	public void Presslogout() {
         driver.findElement(logoutBtn).click();
 	}
-	 public void regester(String FirstName, String LastName, String Email, String Password, String ConfirmPassword) throws InterruptedException {
+	 public void regester(String FirstName, String LastName, String Email, String Password, String ConfirmPassword) {
 		 selectregesterpage();
 		 enterfirstname(FirstName);
 		 enterlastname(LastName);
 		 enterEmail(Email);  
 		 enterpassword(Password);
 		 ConfirmPass(ConfirmPassword);
-		 Thread.sleep(3000);
 		 enterregesterpage();
 	    }
 	 public String getSuccessMessage() {
