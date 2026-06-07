@@ -5,6 +5,7 @@
     <classes>
       <class name="AuthTests.RegesterTest">
         <methods>
+          <include name="openHomePage"/>
           <include name="registerWithLongFirstName"/>
           <include name="tearDown"/>
           <include name="setup"/>
@@ -16,6 +17,8 @@
     <classes>
       <class name="Tests.WishListTest">
         <methods>
+          <include name="ValidAddingtoWishList"/>
+          <include name="openHomePage"/>
           <include name="verifyWishlistButtonPresence"/>
           <include name="tearDown"/>
           <include name="setup"/>

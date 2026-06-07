@@ -15,6 +15,9 @@ public class WishListPage {
 	private final By Myemail = By.id("giftcard_2_SenderEmail");
 	private final By cheapComputerImage =By.xpath("//img[@alt='Picture of Build your own cheap computer']");
 	private final By messageText = By.className("content");
+ 	private final By removeCheckbox = By.name("removefromcart");
+	private final By updateWishlistBtn = By.cssSelector(".update-wishlist-button");
+	private final By emptyWishlistMessage = By.cssSelector(".wishlist-content");
 	
 
 
@@ -63,6 +66,18 @@ public class WishListPage {
         driver.findElement(Myemail).sendKeys(Email);
 	}
 	
+	public void removeProduct() {
+	    driver.findElement(removeCheckbox).click();
+	}
+
+	public void updateWishlist() {
+	    driver.findElement(updateWishlistBtn).click();
+	}
+
+	public String getEmptyWishlistMessage() {
+	    return driver.findElement(emptyWishlistMessage).getText();
+	}
+	
 	 public void InformationGiftcard(String Nameone, String email, String Nametwo, String Email) {
 		 namewhotakegift(Nameone);
 		 emailwhotakegift(email);
@@ -82,5 +97,7 @@ public class WishListPage {
 		 return driver.findElements( By.id("add-to-wishlist-button-2") ).size() > 0; 
 		
 	 }
+	 
+	 
 
 }

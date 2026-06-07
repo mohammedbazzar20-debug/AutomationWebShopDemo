@@ -57,5 +57,36 @@ public class WishListTest extends BaseTest {
 
 	    Assert.assertTrue(wishlist.isWishlistButtonPresent());
 	}
+	
+	@Test(priority = 4)
+	public void removeProductFromWishlist() throws InterruptedException {
 
+	    WishListPage wishlist = new WishListPage(driver);
+
+	    wishlist.giftCardpage();
+
+	    wishlist.InformationGiftcard(
+	            "Ahmad",
+	            "user@gmail.com",
+	            "Ace",
+	            "sender@gmail.com"
+	    );
+
+	    wishlist.Addingtowishlist();
+
+	    Thread.sleep(1000);
+
+	    wishlist.Oopenwishlist();
+
+	    wishlist.removeProduct();
+
+	    wishlist.updateWishlist();
+
+	    Assert.assertEquals(
+	            wishlist.getEmptyWishlistMessage(),
+	            "The wishlist is empty!"
+	    );
+
+	    System.out.println("Wishlist is empty.");
+	}
 }

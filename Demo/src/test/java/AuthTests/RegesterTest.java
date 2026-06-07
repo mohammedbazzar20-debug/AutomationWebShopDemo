@@ -16,7 +16,7 @@ public class RegesterTest extends BaseTest{
 		 String email = DataGenerator.generateEmail();
 		 RegesterPage regesterpage = new RegesterPage(driver);
          Thread.sleep(1000);
-         regesterpage.regester("Ahmad","Mahmoud",email,"A123456@a","A123456@a");
+         regesterpage.regester("Ahmad","Mahmoud",email,"A123456@a","A123456@a"); //data provider
          Assert.assertEquals(regesterpage.getSuccessMessage(),"Your registration completed");
          System.out.println("Regester Successful");
          regesterpage.pressContuine();

@@ -68,4 +68,56 @@ public class CartTest extends BaseTest {
 
 	    System.out.println(cart.getSuccessMessage());
 	}
+	
+	@Test(priority = 4)
+	public void removeProductFromCart() throws InterruptedException {
+
+	    SearchPage search = new SearchPage(driver);
+	    CartPage cart = new CartPage(driver);
+
+	    search.Search("laptop");
+	    search.productdetailpage();
+
+	    cart.addtocartProductPage();
+
+	    Thread.sleep(1000);
+
+	    cart.openShoppingCart();
+
+	    cart.removeProduct();
+
+	    cart.updateCart();
+
+	    Assert.assertTrue(
+	            cart.getEmptyCartMessage()
+	                    .contains("Your Shopping Cart is empty!")
+	    );
+
+	    System.out.println("Product removed successfully.");
+	}
+	
+	@Test(priority = 5)
+	public void verifyProductPriceInCart() throws InterruptedException {
+
+	    SearchPage search = new SearchPage(driver);
+	    CartPage cart = new CartPage(driver);
+
+	    search.Search("laptop");
+
+	    search.productdetailpage();
+
+	    cart.addtocartProductPage();
+
+	    Thread.sleep(1000);
+
+	    cart.openShoppingCart();
+
+	    Assert.assertEquals(
+	            cart.getProductPrice(),
+	            "1590.00"
+	    );
+
+	    System.out.println("Price verified successfully.");
+	}
+	
 	}

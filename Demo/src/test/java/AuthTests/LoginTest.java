@@ -1,7 +1,5 @@
 package AuthTests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,7 +7,6 @@ import AuthPage.LoginPage;
 import Base.BaseTest;
 
 public class LoginTest extends BaseTest {
-	private LoginPage loginpath;
 	
 
         @Test(priority = 1)
